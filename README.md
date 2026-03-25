@@ -8,7 +8,6 @@ Static one-page guest guide for **8 Cornwallis Avenue, Bristol**.
 - `styles.css` contains the layout, colors, responsive styles, and print stylesheet.
 - `script.js` adds copy-to-clipboard buttons and highlights the current nav section.
 - `assets/images/` contains the Bristol illustrations and Wi-Fi QR image pulled from the source guide.
-- `.github/workflows/deploy-pages.yml` deploys the site automatically to GitHub Pages when the repo root is pushed to `main`.
 - `.nojekyll` makes sure GitHub Pages serves the site as plain static files.
 
 ## How to update content later
@@ -21,16 +20,15 @@ Static one-page guest guide for **8 Cornwallis Avenue, Bristol**.
 
 ## GitHub Pages deployment
 
-This project is set up as a plain static site and also includes a GitHub Actions workflow for GitHub Pages.
+This project is set up as a plain static site, so it can be deployed directly from the repository root with GitHub Pages.
 
 1. Push the `bristol-guest-guide-site` folder to a GitHub repository.
 2. If this folder will be the whole repository, keep these files at the repo root.
 3. Push the repository to GitHub on the `main` branch.
 4. In GitHub, go to `Settings` -> `Pages`.
-5. Under `Source`, select `GitHub Actions`.
-6. The included workflow will publish the site automatically after each push to `main`.
-
-If you prefer the simpler branch-based Pages setup instead, you can also deploy the same files directly from the repository root without using the workflow.
+5. Under `Source`, select `Deploy from a branch`.
+6. Choose the `main` branch and the `/ (root)` folder.
+7. Save, then wait a minute or two for the site to publish.
 
 ## Suggested first commit
 
